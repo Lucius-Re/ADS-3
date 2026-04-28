@@ -54,6 +54,9 @@ The program evaluates algorithm performance using the following dataset sizes:
 | 100        | 2800             |
 | 1000       | 2500             |
 
+<img width="609" height="754" alt="image" src="https://github.com/user-attachments/assets/e086f52c-9fc2-42da-8e87-889a8a9b75fe" />
+
+
 # Note
 
 Binary Search is performed only on sorted arrays.
