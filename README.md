@@ -58,7 +58,6 @@ The program evaluates algorithm performance using the following dataset sizes:
 
 Binary Search is performed only on sorted arrays.
 
----
 
 # Algorithm Analysis
 
@@ -68,7 +67,6 @@ Binary Search is performed only on sorted arrays.
 - Inefficient for large datasets  
 - Number of comparisons grows rapidly with input size  
 
----
 
 ## Quick Sort Complexity
 
@@ -78,7 +76,6 @@ Binary Search is performed only on sorted arrays.
 - Much faster than Bubble Sort in practice  
 - Average complexity: O(n log n)  
 
----
 
 ## Binary Search Complexity
 
@@ -87,7 +84,6 @@ Binary Search is performed only on sorted arrays.
 - Eliminates half of the search space each step  
 - Extremely efficient for large datasets  
 
----
 
 # Comparison Summary
 
@@ -95,7 +91,6 @@ Binary Search is performed only on sorted arrays.
 - Quick Sort → efficient and widely used in real systems  
 - Binary Search → fastest searching algorithm but requires sorted data  
 
----
 
 # Key Observations
 
@@ -104,7 +99,7 @@ Binary Search is performed only on sorted arrays.
 - Binary Search shows stable and very fast performance  
 - Sorting is required before efficient searching can be applied  
 
----
+
 
 # Conclusion / Reflection
 
@@ -112,7 +107,7 @@ In this project, I learned how algorithm efficiency directly impacts real execut
 
 Even small differences in complexity lead to large performance changes when dataset size increases.
 
----
+
 
 ## Main Takeaways
 
@@ -121,7 +116,7 @@ Even small differences in complexity lead to large performance changes when data
 - Divide-and-conquer (Quick Sort) is highly effective  
 - Preprocessing (sorting) is necessary for fast searching  
 
----
+
 
 # Final Insight
 
