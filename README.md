@@ -1,72 +1,63 @@
-Assignment 3: Sorting and Searching Algorithm Analysis System
-Project Overview
+# ADS-3
+# Assignment 3: Sorting and Searching Algorithm Analysis System
+
+## Project Overview
 
 This project analyzes and compares the performance of three algorithms:
 
-Bubble Sort (Basic Sorting)
-Quick Sort (Advanced Sorting)
-Binary Search (Searching)
+- Bubble Sort (Basic Sorting)
+- Quick Sort (Advanced Sorting)
+- Binary Search (Searching)
 
 The purpose of this experiment is to measure execution time using System.nanoTime() and compare algorithm efficiency across different array sizes and input types (random and sorted).
 
-Algorithm Descriptions
-Bubble Sort
+## Algorithm Descriptions
 
+### Bubble Sort
 Bubble Sort repeatedly compares adjacent elements and swaps them if they are in the wrong order.
+- Best Case: O(n)
+- Average/Worst Case: O(n²)
 
-Best Case: O(n)
-Average Case: O(n²)
-Worst Case: O(n²)
+### Quick Sort
+Quick Sort uses divide-and-conquer by selecting a pivot and partitioning the array.
+- Best/Average Case: O(n log n)
+- Worst Case: O(n²)
 
-Simple but inefficient for large datasets due to repeated comparisons and swaps.
+### Binary Search
+Binary Search repeatedly divides the sorted array in half.
+- Time Complexity: O(log n)
+- Requirement: Array must be sorted
 
-Quick Sort
-
-Quick Sort uses the divide-and-conquer approach by selecting a pivot element and partitioning the array into subarrays.
-
-Best Case: O(n log n)
-Average Case: O(n log n)
-Worst Case: O(n²)
-
-Efficient in practice and widely used in real-world applications due to its average performance.
-
-Binary Search
-
-Binary Search works by repeatedly dividing a sorted array into halves and eliminating half of the search space each step.
-
-Time Complexity: O(log n)
-Requirement: Array must be sorted before searching
-Experiment Design
+## Experiment Design
 
 The program evaluates algorithm performance using the following dataset sizes:
 
-Small: 10 elements
-Medium: 100 elements
-Large: 1000 elements
+- Small: 10 elements
+- Medium: 100 elements
+- Large: 1000 elements
 
-Each test measures execution time in nanoseconds using:
+# Each test measures execution time in nanoseconds using:
+- System.nanoTime()
 
-System.nanoTime()
-Experiment Results
-Sorting Performance Comparison
+## Experiment Results
+# Sorting Performance Comparison
 Array Size	Bubble Sort (ns)	Quick Sort (ns)
-10	...	...
-100	...	...
-1000	...	...
-Searching Performance (Binary Search)
+10	18500	14100
+100	391600	61100
+1000	26513300	1102700
+
+# Searching Performance (Binary Search)
 Array Size	Search Time (ns)
-10	...
-100	...
-1000	...
+10	3800
+100	2800
+1000	2500
 
 💡 Note: Binary Search is performed only on sorted arrays.
 
 Algorithm Analysis
 Bubble Sort Complexity
 
-O(n
-2
-)
+O(n2)
 
 Bubble Sort has quadratic time complexity, which makes it inefficient for large datasets because the number of comparisons grows rapidly as input size increases.
 
