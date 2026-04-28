@@ -48,9 +48,9 @@ Array Size	Bubble Sort (ns)	Quick Sort (ns)
 
 # Searching Performance (Binary Search)
 Array Size	Search Time (ns)
-10	3800
-100	2800
-1000	2500
+- 10	     3800
+- 100   	 2800
+- 1000	   2500
 
 💡 Note: Binary Search is performed only on sorted arrays.
 
