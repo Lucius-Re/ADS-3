@@ -41,53 +41,90 @@ The program evaluates algorithm performance using the following dataset sizes:
 
 ## Experiment Results
 # Sorting Performance Comparison
-Array Size	Bubble Sort (ns)	Quick Sort (ns)
-10	18500	14100
-100	391600	61100
-1000	26513300	1102700
+| Array Size | Bubble Sort (ns) | Quick Sort (ns) |
+|------------|------------------|------------------|
+| 10         | 18500            | 14100            |
+| 100        | 391600           | 61100            |
+| 1000       | 26513300         | 1102700          |
 
 # Searching Performance (Binary Search)
-Array Size	Search Time (ns)
-- 10	     3800
-- 100   	 2800
-- 1000	   2500
+| Array Size | Search Time (ns) |
+|------------|------------------|
+| 10         | 3800             |
+| 100        | 2800             |
+| 1000       | 2500             |
 
-💡 Note: Binary Search is performed only on sorted arrays.
+# Note
 
-Algorithm Analysis
-Bubble Sort Complexity
+Binary Search is performed only on sorted arrays.
 
-O(n2)
+---
 
-Bubble Sort has quadratic time complexity, which makes it inefficient for large datasets because the number of comparisons grows rapidly as input size increases.
+# Algorithm Analysis
 
-Quick Sort Complexity
+## Bubble Sort Complexity
 
-O(nlogn)
+- Bubble Sort has quadratic time complexity  
+- Inefficient for large datasets  
+- Number of comparisons grows rapidly with input size  
 
-Quick Sort performs significantly better due to its divide-and-conquer strategy, which reduces the problem size at each recursive step.
+---
 
-Binary Search Complexity
+## Quick Sort Complexity
 
-O(logn)
 
-Binary Search is highly efficient because it eliminates half of the remaining elements at each step, resulting in logarithmic growth.
+- Uses divide-and-conquer approach  
+- Splits array using pivot element  
+- Much faster than Bubble Sort in practice  
+- Average complexity: O(n log n)  
 
-Comparison Summary
-Bubble Sort → simple but very slow for large inputs
-Quick Sort → efficient and practical for real systems
-Binary Search → fastest searching method but requires sorted data
-Key Observations
-Quick Sort significantly outperforms Bubble Sort as input size increases.
-Bubble Sort becomes impractical for large datasets due to O(n²) complexity.
-Binary Search demonstrates extremely fast performance compared to linear search alternatives.
-Sorting is a mandatory preprocessing step before applying efficient search algorithms.
-Conclusion / Reflection
+---
 
-In this project, I learned how algorithm efficiency directly impacts performance in real execution time. Even small differences in time complexity lead to significant performance gaps when working with larger datasets.
+## Binary Search Complexity
 
-Main takeaways:
-Time complexity is more important than raw code simplicity.
-Efficient algorithms scale much better with large inputs.
-Divide-and-conquer strategies (Quick Sort) are highly effective.
-Preprocessing data (sorting) is necessary for efficient searching.
+
+- Works only on sorted arrays  
+- Eliminates half of the search space each step  
+- Extremely efficient for large datasets  
+
+---
+
+# Comparison Summary
+
+- Bubble Sort → simple but very slow for large inputs  
+- Quick Sort → efficient and widely used in real systems  
+- Binary Search → fastest searching algorithm but requires sorted data  
+
+---
+
+# Key Observations
+
+- Quick Sort significantly outperforms Bubble Sort as input size grows  
+- Bubble Sort becomes impractical for large datasets due to O(n²) complexity  
+- Binary Search shows stable and very fast performance  
+- Sorting is required before efficient searching can be applied  
+
+---
+
+# Conclusion / Reflection
+
+In this project, I learned how algorithm efficiency directly impacts real execution performance.
+
+Even small differences in complexity lead to large performance changes when dataset size increases.
+
+---
+
+## Main Takeaways
+
+- Time complexity matters more than simple implementation  
+- Efficient algorithms scale better with large inputs  
+- Divide-and-conquer (Quick Sort) is highly effective  
+- Preprocessing (sorting) is necessary for fast searching  
+
+---
+
+# Final Insight
+
+- Algorithm choice is more important than code length  
+- Real performance depends on complexity, not just logic  
+- Understanding Big-O is essential for scalable software design  
